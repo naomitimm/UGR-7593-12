@@ -304,7 +304,8 @@ div.pop-recepies img:hover {
     }
 
     img.recepies {
-        width: 50%;
+        width: 40%;
+        max-width: 41%;
         justify-self: center;
     }
 
