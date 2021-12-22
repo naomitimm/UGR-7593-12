@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 1em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* /////////////////////////
+          LAYOUT
+///////////////////////// */
+
+label {
+    display: block;
+    margin: 1.5em 0;
+}
+
+
+a.current-page {
+    font-weight: 700;
+    border-bottom: .1em solid black;
+}
+
+
+div.primary-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0 5em;
+    gap: 2em;
+    
+}
+
+div.border {
+    border: .1em solid black;
+    padding: .9em .5em;
+    margin: .5em;
+    max-width: 400px;
+    text-align: center;
+    
+}
+
+
+
+.contact-right-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .2fr repeat(3, 1fr) .2fr;
+    border: .2em solid black;
+    padding: .3em;
+    transition: .5s ease;
+    box-shadow:  1em 1em .4em rgba(0, 0, 0, .2);
+    
+}
+
+.contact-right-col:hover, .contact-right-col:focus {
+    transform:scale(1.06);
+    z-index: 2;
+    box-shadow:  1em 1em .4em rgba(182, 110, 3, 0.2);
+    
+}
+
+
+
+.contact-left-col {
+    margin-top: 1em;
+}
+
+div.feedback-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3em;
+    margin-right: 2em;
+
+}
+
+img.contact-img {
+    width: 90%;
+    justify-self: center;
+}
+
+p.span-contact-par {
+    grid-column: span 3;
+    text-align: center;
+}
+
+
+/* /////////////////////////
+         LINKS
+///////////////////////// */
+
+.contact-page-links {
+    text-decoration: none;
+    color: black;
+}
+
+a.contact-page-links:hover, a.contact-page-links:focus {
+    border-bottom: .1em solid black;
+}
+
+
+
+/* /////////////////////////
+          COLORS
+///////////////////////// */
+
+
+a.to-recepies-link {
+    color: rgb(204, 149, 77);
+    background-color: black;
+    font-weight: 600;
+    padding: 0 .3em;
+}
+
+
+/* /////////////////////////
+          Animation
+///////////////////////// */
+
+
+/* ///////////   ////////////  FOR BUTTONS /////////////  /////////////  */
+
+.btns {
+    outline: .1em solid black;
+    border: .1em solid black;
+    transition: outline-offset 250ms ease;
+    cursor: pointer;
+    background-color: burlywood;
+}
+
+a.btn-link {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    border-bottom: .01em solid black;
+}
+
+a.btn-link:hover, a.btn-link:focus {
+    border-bottom: .1em solid black;
+    font-style: normal;
+    font-weight: 600;
+    
+    
+}
+
+div.btns:hover, div.btns:focus {
+    outline-offset: .6em; 
+    padding: .5em 3em;
+}
+
+
+
+
+/* /////////////////////////
+         MEDIA QUERY
+///////////////////////// */
+
+@media (max-width:1099px) {
+
+    main {
+        margin: 1.5em;
+    }
+
+ }
+
+@media (max-width:768px) { 
+    
+
+
+    div.primary-contact {
+        margin: 0;
+        gap: .5em;
+    }
+
+    div.email-contact {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    h1, h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+
+    
+
+    div.feedback-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 1.5em;
+        margin: 0;
+    }
+    
+    .contact-right-col {
+        grid-template-columns: repeat(2, .5fr);
+        grid-template-rows: .1fr repeat(5, .2fr) .1fr;
+        gap: .4em;
+        border: .1em dashed black;
+        margin-top: 2em;
+        transition: .5s ease;
+        box-shadow:  .5em .5em .2em rgba(0, 0, 0, .2);
+        
+    }
+    
+    .contact-right-col:hover, .contact-right-col:focus {
+        transform:scale(1.06);
+        z-index: 2;
+        box-shadow:  .5em .5em .2em rgba(182, 110, 3, 0.2);
+        
+    }
+
+
+    p.span-contact-par {
+        grid-column: span 2;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+
+    img.contact-img {
+        width: 70%;
+        justify-self: center;
+    }
+
+    img.contact-img9 {
+        grid-column: span 2;
+        width: 40%;
+
+    }
+
+}
+
+

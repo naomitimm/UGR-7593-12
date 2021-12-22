@@ -1,0 +1,308 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body h1 {
+    border-bottom: 1px solid black;
+}
+
+
+/* /////////////////////////
+          TYPOGRAPHY
+///////////////////////// */
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1, h2, h3 {
+    text-transform: capitalize;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/**************************************** HEADER STYLING ********************************************/
+
+/* /////////////////////////
+          TYPOGRAPHY
+///////////////////////// */
+
+
+li.menu-item, p.logo {
+    font-size: 1.25rem;
+}
+
+
+
+
+/* /////////////////////////
+          LAYOUT
+///////////////////////// */
+
+
+nav.header {
+    display: flex;
+    padding: 4em;
+    justify-content: space-between;
+}
+
+ul.navigation-bar {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+img.site-logo {
+    width: 15%;
+    
+}
+
+div.logo p {
+    margin-left: 1em;
+}
+
+li.menu-item {
+    padding-left: 1.5em;
+}
+
+a.menu-link {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+a.menu-link:hover, a.menu-link:focus {
+    border-bottom: 2px solid black;
+}
+
+
+
+
+/* ///////////   ////////////  FOR LOGO /////////////  /////////////  */
+
+p.last-p span {
+    font-weight: 700;
+}
+
+p.bold span {
+    font-weight: 700;
+}
+
+p.t {
+    padding-left: 1em;
+}
+
+p.d {
+    padding-left: 2em;
+}
+
+p.logo {
+    margin: 0;
+}
+
+
+
+
+
+
+/**************************************** FOOTER STYLING ********************************************/
+
+footer {
+    margin-top: auto;
+    padding-bottom: 1em;
+}
+
+ul.small-screen {
+    display: none;
+}
+
+img.footer-socials {
+    width: 7%;
+    padding: 0 1.5em;
+}
+
+img.footer-contact {
+    width: 7%;
+    padding: 0 1.5em;
+}
+
+img.back-top {
+    transform: translateY(35%);
+    width: 7%;
+}
+
+div.footer-container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div.sub-footer-txt p {
+    font-size: 1rem;
+    margin: .1em;
+    
+}
+
+.footer-elem {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+div.back-to-top {
+    grid-column: 3/4;
+    text-align: center;
+}
+
+li.footer-list {
+    list-style: none;
+}
+
+
+p.footer-par {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+a.footer-link:hover, 
+a.footer-link:focus {
+    border-bottom: 1px solid black;
+}
+
+/* /////////////////////////
+          COLOR
+///////////////////////// */
+
+
+body {
+    margin: 0;
+}
+
+
+header {
+    background-color: rgb(250, 230, 198);
+}
+
+footer {
+    background-color: rgb(211, 168, 98);
+    margin-top: 5em;
+    
+}
+
+
+
+
+/* /////////////////////////
+          MEDIA
+///////////////////////// */
+
+
+/* FOR HEADER */
+
+@media (max-width:1099px) {
+
+    body {
+        width: fit-content;
+    }
+
+
+ }
+
+
+
+@media (max-width:768px) {
+
+    body {
+        width: fit-content;
+    }
+
+    li.menu-item, p.logo {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    p.logo {
+       display: inline;
+       margin: 0;
+       padding: 0;
+    }
+
+
+
+    nav.header {
+        flex-direction: column;
+        align-items: center;
+        padding: .2em;
+    }
+
+    div.logo {
+        margin: 0 auto;
+    }
+
+    ul.navigation-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    li.menu-item {
+        padding: .25em;
+    }
+
+    /* FOR FOOTER  */
+
+
+    div.footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    ul.small-screen {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        border-top: .01em solid black;
+        border-bottom: .01em solid black;
+    }
+
+    ul.dis-none {
+        display: none;
+    }
+
+    div.back-to-top {
+        grid-column: 1/2;
+        text-align: center;
+    }
+
+    .back-to-top a {
+        font-weight: 700;
+    }
+    
+    .sub-footer-txt p {
+        font-size: .1rem;
+    }
+
+    footer {
+        margin-top: 2.5em;
+    }
+
+
+    
+}
+
+
+

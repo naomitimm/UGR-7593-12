@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 1em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* /////////////////////////
+          LAYOUT
+///////////////////////// */
+
+div.dis-flex {
+    display: flex;
+    margin: 2em 0;
+    border-bottom: .08em solid black;
+   
+}
+
+a.current-page {
+    font-weight: 700;
+    border-bottom: .1em solid black;
+}
+
+
+div.tiptrick-container {
+    margin-left: 3em;
+}
+
+p.tiptrick {
+    width: 70%
+}
+
+img.big {
+    width: 50%;
+    padding: 2em 0 4em;
+}
+
+img.third {
+    width: 30%;
+    display: block;
+    padding-left: 4em;
+    padding-top: 1em;
+}
+
+p.tiptrick {
+    margin: 4em 0;
+    max-width: 600px;
+}
+
+div.imgs {
+    position: relative;
+    grid-template-rows: .2fr 2fr 1fr;
+}
+
+
+
+img.small {
+    width: 30%;
+    position:absolute;
+    top: 15em;
+    left: 12em;
+    z-index: 100;
+}
+
+
+
+img.cook {
+    top: 17em;
+}
+
+img.tip3-img {
+    margin-top: 3em;
+}
+
+span.bold {
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+/* /////////////////////////
+          Animation
+///////////////////////// */
+
+
+/* ///////////   ////////////  FOR IMAGES/////////////  /////////////  */
+
+img.big, img.small {
+    transition: 1s ease;
+}
+
+img.big:hover, img.small:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow:0 .2em .4em rgba(0, 0, 0, .5);
+}
+
+
+
+
+/* /////////////////////////
+         MEDIA QUERY
+///////////////////////// */
+
+
+@media (max-width:1099px) {
+
+    main {
+        margin: 1.5em;
+    }
+
+ }
+
+
+ @media (max-width:768px) { 
+     
+    h1,h2 {
+        text-align: center;
+    }
+
+    img.dis-none {
+        display: none;
+    }
+
+    div.dis-flex {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    div.wide-screen {
+        margin: 0;
+    }
+
+    img.big {
+        margin: 0;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    p.tiptrick {
+        margin: 2em 0;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

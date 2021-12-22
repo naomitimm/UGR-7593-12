@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product purchase form</title>
+</head>
+<body>
+    <nav>
+        <a href="../shop.html"><img src="../../IMAGES/common/backward.png" width="3%" alt="navigation back button"></a>
+    </nav>
+
+    <h1>Product purchase form</h1>
+
+    <div class="purchase">
+        <img src="../../IMAGES/shop/ktc black.jpg" alt="black iss the cook apron" width="15%">
+        <p>*the selected image from the home page to be bought*</p>
+
+        <p style="font-weight: 600;">shipping method</p>
+        <form action="post">
+            <label for="Local(in or around Addis Ababa)">Local (in or around Addis Ababa)</label>
+            <input type="radio" name="shipping" id="Local(in or around Addis Ababa)" checked> 
+            <br>
+            <label for="train">Train</label><input type="radio" name="shipping" id="train">
+        </form>
+
+        <p style="font-weight: 600;">payment method</p>
+        <form action="post">
+            <label for="banktransfer">Bank Transfer</label><input type="radio" name="payment" id="banktransfer" checked> 
+            <br>
+            <label for="paypal">Pay Pal</label><input type="radio" name="payment" id="paypal"> 
+        </form>
+
+    </div>
+</body>
+</html>
