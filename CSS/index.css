@@ -184,7 +184,6 @@ div.img-container img:hover {
     transform: scale(1.2);
     z-index: 2;
 
-
 }
 
 div.pop-recepies {
@@ -247,48 +246,21 @@ div.pop-recepies img:hover {
     }
 
     div.img-container {
-        gap: .5em;
+        display: flex;
+        flex-direction: column;
         border: .1em dashed black;
-        grid-template-columns: repeat(2, 0.4fr);
-        grid-template-rows: repeat(3, .5fr);
-        
     }
 
-    img.img-1 {
-        grid-row: 1/2;
-        grid-column: 1/2;
-        width: 70%;
+    div.img-container img:hover {
+        transform: none;
     }
 
-    img.img-2 {
-        grid-row: 2/3;
-        grid-column: 1/2;
-        width: 70%;
-    }
-
-    img.img-3 {
-        grid-row: 3/4;
-        grid-column: 1/2;
-        width: 70%;
-    }
-
-    .col2-par1 {
-        grid-row: 1/2;
-        grid-column: 2/3;
+    p.col2-par {
         align-self: center;
+        font-weight: 600;
+        padding: .2em 0;
     }
-    
-    .col2-par2 {
-        grid-row: 2/3;
-        grid-column: 2/3;
-        align-self: center;
-    }
-    
-    .col2-par3 {
-        grid-row: 3/4;
-        grid-column: 2/3;
-        align-self: center;
-    }
+
 
     div.pop-recepies p {
         display: none;
