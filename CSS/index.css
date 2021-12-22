@@ -267,13 +267,15 @@ div.pop-recepies img:hover {
     }
 
     div.pop-recepies {
-        display: grid;
-        grid-template-columns: repeat(2, .5fr);
-        grid-template-rows: repeat(2, .5fr);
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: .2em;
     }
+
+    img.recepies {
+        margin: .3em 0;
+    }
+
 
     img.recepies {
         width: 40%;
