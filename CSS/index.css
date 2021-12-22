@@ -261,15 +261,12 @@ div.pop-recepies img:hover {
         padding: .2em 0;
     }
 
-
-    div.pop-recepies p {
-        display: none;
-    }
-
     div.pop-recepies {
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: .1em dashed black;
+        box-shadow: 0 0 1em .4em rgba(0, 0, 0, .2);
     }
 
     img.recepies {
