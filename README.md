@@ -1,3 +1,3 @@
-# Naomi Timoteos | Protfolio
-Name: Naomi Timoteos
-ID: UGR/7593-12
+# Pure CSS and HTML project
+this is a front end project for a personal chef protfolio.
+It is implemented in pure CSS and HTML.
